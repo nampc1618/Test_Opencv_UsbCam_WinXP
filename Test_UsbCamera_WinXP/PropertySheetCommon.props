@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <OPENCV_LIBS_DIR>G:\Nampc\package\Build\opencv-3.2\x86\v141_xp\lib</OPENCV_LIBS_DIR>
+    <OPENCV_INCLUDE_DIR>G:\Nampc\package\Build\opencv-3.2\include</OPENCV_INCLUDE_DIR>
+    <OPENCV_LIBS_NAME>opencv_core320.lib;opencv_highgui320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_videoio320.lib</OPENCV_LIBS_NAME>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="OPENCV_LIBS_DIR">
+      <Value>$(OPENCV_LIBS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENCV_INCLUDE_DIR">
+      <Value>$(OPENCV_INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENCV_LIBS_NAME">
+      <Value>$(OPENCV_LIBS_NAME)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
